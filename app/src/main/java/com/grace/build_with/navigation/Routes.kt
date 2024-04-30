@@ -1,0 +1,42 @@
+package com.grace.build_with.navigation
+
+const val ROUTE_LOGIN="login"
+const val ROUTE_SIGNUP="signup"
+const val ROUTE_PROFESSIONALS="professionals"
+const val ROUTE_BOOKMARKS="bookmarks"
+const val ROUTE_MAGAZINE="magazine"
+const val ROUTE_PROFILE="profile"
+const val ROUTE_SETTINGS="settings"
+const val ROUTE_PROJECTS="projects"
+const val ROUTE_HOME="home"
+const val ROUTE_BATHROOM="bathroom"
+const val ROUTE_YARD_PHOTOS="yard"
+const val ROUTE_INTERIOR_DESIGN="interior design"
+const val ROUTE_ELECTRICAL_INSTALLATIONS="electrical installations"
+const val ROUTE_FLOOR_WORK="floor work"
+const val ROUTE_TILE_WORK="tile work"
+const val ROUTE_FURNITURE_DESIGN="furniture design"
+const val ROUTE_GARDENING="gardening"
+const val ROUTE_HOUSE_BUILDING="house building"
+const val ROUTE_KITCHEN_PLANNING="kitchen planning"
+const val ROUTE_PLUMBING="plumbing"
+const val ROUTE_RENOVATION="renovation"
+const val ROUTE_ROOF_PROJECT="roof project"
+const val ROUTE_GENERAL_INFORMATION="general information"
+const val ROUTE_CONTACT_INFORMATION="contact information"
+const val ROUTE_PUBLISH="publish"
+
+///Screens with images only
+
+
+const val ROUTE_DIY_PHOTOS="diy"
+const val ROUTE_GARDEN="compound"
+const val ROUTE_BATH_AREA="bath area"
+const val ROUTE_ARCHITECTURE_PHOTOS="architecture photos"
+const val ROUTE_KITCHEN="kitchen"
+const val ROUTE_BEDROOM="bedroom"
+const val ROUTE_DECOR="decoration & furniture"
+const val ROUTE_HOUSES="houses"
+const val ROUTE_DINING="dining"
+const val ROUTE_POOLS="pools"
+

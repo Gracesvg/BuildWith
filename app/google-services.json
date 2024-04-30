@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "590421722418",
+    "project_id": "build-with",
+    "storage_bucket": "build-with.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590421722418:android:56510da1ad41247dad032b",
+        "android_client_info": {
+          "package_name": "com.grace.build_with"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBuEhBvXWQqULH7A7PGSjSwX53Ei1_Brc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
