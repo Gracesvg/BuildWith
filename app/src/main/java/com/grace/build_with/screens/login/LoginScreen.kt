@@ -124,18 +124,21 @@ fun LoginScreen(navController: NavHostController) {
                     Spacer(modifier = Modifier.height(20.dp))
 
                     Row (
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier
+                            .fillMaxWidth() ,
                         horizontalArrangement = Arrangement.SpaceBetween
                     ){
                         Row(
                             horizontalArrangement = Arrangement.Center,
+
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Checkbox(checked =checked , onCheckedChange =onCheckedChange )
                             Text( "Remember Me")
+                            Modifier.width(5.dp)
                         }
-                        TextButton(onClick = { /*TODO*/ },
-                            contentPadding = PaddingValues(end = 15.dp)
+                        TextButton(onClick = {  },
+                            contentPadding = PaddingValues(end = 15.dp),
 
                             ) {
                             Text("Forgot Password?")
@@ -188,9 +191,9 @@ fun AlternativeLoginOptions(
     modifier: Modifier = Modifier,
 ) {
     val iconList = listOf(
-        R.drawable.logo,
-        R.drawable.logo,
-        R.drawable.logo
+        R.drawable.linkedin,
+        R.drawable.github,
+        R.drawable.google
 
     )
     Column(
@@ -206,7 +209,7 @@ fun AlternativeLoginOptions(
                 Icon(painter = painterResource(id = iconResId),
                     contentDescription = "alternative Login",
                     modifier = Modifier
-                        .size(32.dp)
+                        .size(40.dp)
                         .clickable {
                             onIconClick(index)
                         }
