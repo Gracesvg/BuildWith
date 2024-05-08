@@ -1,6 +1,7 @@
 package com.grace.build_with.screens.magazine
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -30,6 +31,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -37,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.grace.build_with.R
 import com.grace.build_with.navigation.ROUTE_ARCHITECTURE_PHOTOS
 import com.grace.build_with.navigation.ROUTE_BATH_AREA
 import com.grace.build_with.navigation.ROUTE_BEDROOM
@@ -146,6 +150,16 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1))
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.bedintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                            .padding(start = 2.dp)
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -183,6 +197,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.bathintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -219,6 +242,16 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.fdintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -255,6 +288,16 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.archintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                            .padding(start = 2.dp)
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -292,6 +335,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.diyintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -327,6 +379,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.gardenintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -362,6 +423,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.hseintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -397,6 +467,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.poolintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
@@ -432,6 +511,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.kitchenintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 
