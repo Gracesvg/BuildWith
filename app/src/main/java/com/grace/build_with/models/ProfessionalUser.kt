@@ -1,17 +1,22 @@
 package com.grace.build_with.models
 
-class ProfessionalUser {
-    var name:String = ""
-    var email:String = ""
-    var company:String = ""
-    var phonenumber: String = ""
+import androidx.compose.ui.input.pointer.PointerId
 
-    constructor(name: String, email: String,company: String,phonenumber:String) {
+class ProfessionalUser {
+    var description: String = ""
+    var email: String = ""
+    var name: String = ""
+    var phonenumber: String = ""
+    var id: String = ""
+
+    constructor(name: String, email: String, phonenumber: String, description: String,id: String) {
         this.name = name
         this.email = email
-        this.company = company
         this.phonenumber = phonenumber
-    }
-    constructor()
+        this.description = description
+        this.id=id
 
+    }
+
+    constructor()
 }

@@ -25,6 +25,10 @@ const val ROUTE_ROOF_PROJECT="roof project"
 const val ROUTE_GENERAL_INFORMATION="general information"
 const val ROUTE_CONTACT_INFORMATION="contact information"
 const val ROUTE_PUBLISH="publish"
+const val ROUTE_REGISTERPROFESSIONAL="registerprofessionals"
+const val ROUTE_UPDATEPROFESSIONALS="updateprofessionals"
+const val ROUT_VIEWPRODUCT="viewproduct"
+
 
 ///Screens with images only
 

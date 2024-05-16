@@ -32,6 +32,7 @@ import androidx.compose.material.Divider
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Notifications
@@ -61,8 +62,10 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.grace.build_with.data.AuthViewModel
 import com.grace.build_with.navigation.ROUTE_HOME
+import com.grace.build_with.navigation.ROUTE_REGISTERPROFESSIONAL
 import com.grace.build_with.navigation.ROUTE_SETTINGS
 import com.grace.build_with.navigation.ROUTE_SIGNUP
+import com.grace.build_with.navigation.ROUTE_UPDATEPROFESSIONALS
 
 @Composable
 fun ProfileScreen(navController: NavHostController) {
@@ -80,9 +83,6 @@ fun ProfileScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(10.dp))
         Spacer(modifier = Modifier.height(10.dp))
         Spacer(modifier = Modifier.height(10.dp))
-        Spacer(modifier = Modifier.height(10.dp))
-        Spacer(modifier = Modifier.height(10.dp))
-
 
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -207,11 +207,64 @@ fun ProfileScreen(navController: NavHostController) {
                 fontFamily = FontFamily.SansSerif
             )
         }
+        Divider(modifier = Modifier.padding(start = 5.dp, end = 5.dp))
+        Row(verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.clickable {
+                navController.navigate(ROUTE_REGISTERPROFESSIONAL)
+            }) {
+            androidx.compose.material3.Icon(
+                imageVector = Icons.Filled.Build,
+                tint = Color(0xFF94AD95),
+
+                contentDescription = "",
+                modifier = Modifier.size(32.dp)
+            )
+            Spacer(modifier = Modifier.width(15.dp))
+
+            Text(
+                text = "Register Business",
+                modifier = Modifier
+                    .padding(15.dp)
+                    .clickable { },
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Gray,
+                fontFamily = FontFamily.SansSerif
+            )
+        }
+        Divider(modifier = Modifier.padding(start = 5.dp, end = 5.dp))
+        Row(verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.clickable {
+                navController.navigate(ROUTE_REGISTERPROFESSIONAL)
+            }) {
+            androidx.compose.material3.Icon(
+                imageVector = Icons.Filled.Build,
+                tint = Color(0xFF94AD95),
+
+                contentDescription = "",
+                modifier = Modifier.size(32.dp)
+            )
+            Spacer(modifier = Modifier.width(15.dp))
+
+            Text(
+                text = "Update Registered Business",
+                modifier = Modifier
+                    .padding(15.dp)
+                    .clickable {
+                        navController.navigate(ROUTE_UPDATEPROFESSIONALS)
+
+                    },
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Gray,
+                fontFamily = FontFamily.SansSerif
+            )
+        }
 
         Divider(modifier = Modifier.padding(start = 5.dp, end = 5.dp))
         Row(verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.clickable { }) {
-            androidx.compose.material3.Icon(
+            Icon(
                 imageVector = Icons.Filled.Settings,
                 tint = Color(0xFF94AD95),
 

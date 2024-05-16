@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.provider.MediaStore
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -41,7 +42,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -51,6 +54,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.grace.build_with.R
 import com.grace.build_with.navigation.ROUTE_BOOKMARKS
 import com.grace.build_with.navigation.ROUTE_PROJECTS
 
@@ -150,6 +154,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.advanta),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(start = 2.dp)
+                )
+
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -323,6 +337,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.brownhouse),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -334,7 +358,7 @@ fun ProfessionalsScreen(navController: NavHostController) {
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
-                    text = "Livonta Global Pvt.Ltd -Medical",
+                    text = "Brown House Pvt.Ltd -Medical",
                     fontSize = 15.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = Color.DarkGray,
@@ -491,6 +515,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.greenark),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -659,6 +693,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.richandaki),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -827,6 +871,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.mgk),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -995,6 +1049,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1))
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.lda),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -1162,6 +1226,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1))
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.first),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -1330,6 +1404,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.dom),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -1497,6 +1581,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.woodly),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 
@@ -1508,7 +1602,7 @@ fun ProfessionalsScreen(navController: NavHostController) {
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
-                    text = "Advanta Africa",
+                    text = "Woodly LTD Africa",
                     fontSize = 15.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = Color.DarkGray,
@@ -1665,6 +1759,16 @@ fun ProfessionalsScreen(navController: NavHostController) {
                     .height(280.dp)
                     .background(Color(0x7EF1F1F1)),
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.gg),
+                    contentDescription = "",
+                    contentScale = ContentScale.FillWidth,
+                    modifier = Modifier
+                        .fillMaxSize()
+
+                        .padding(start = 2.dp)
+                )
+
             }
             Spacer(modifier = Modifier.height(10.dp))
 

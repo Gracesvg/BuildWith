@@ -22,11 +22,11 @@ sealed class BottomBarScreen(
         title = "Professional",
         icon = Icons.Default.Person
     )
-    object Bookmarks:BottomBarScreen(
-        route = "bookmarks",
-        title = "Bookmarks",
-        icon = Icons.Default.FavoriteBorder
-    )
+//    object Bookmarks:BottomBarScreen(
+//        route = "bookmarks",
+//        title = "Bookmarks",
+//        icon = Icons.Default.FavoriteBorder
+//    )
     object Magazine:BottomBarScreen(
         route = "menu",
         title = "Menu",

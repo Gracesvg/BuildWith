@@ -556,6 +556,15 @@ fun MagazineScreen(navController: NavHostController) {
                         .height(290.dp)
                         .background(Color(0x7EF1F1F1)),
                 ) {
+                    Image(
+                        painter = painterResource(id =R.drawable.dineintro),
+                        contentDescription = "",
+                        contentScale = ContentScale.FillHeight,
+                        modifier = Modifier
+                            .fillMaxSize()
+
+                    )
+
                 }
                 Spacer(modifier = Modifier.height(30.dp))
 

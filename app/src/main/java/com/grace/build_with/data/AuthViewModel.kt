@@ -2,13 +2,13 @@ package com.grace.build_with.data
 
 import android.content.Context
 import android.widget.Toast
-import androidx.navigation.NavHostController
+import androidx.navigation.NavController
 import com.google.firebase.auth.FirebaseAuth
 import com.grace.build_with.navigation.ROUTE_HOME
 import com.grace.build_with.navigation.ROUTE_LOGIN
 
 
-class AuthViewModel(var navController: NavHostController, var context: Context) {
+class AuthViewModel(var navController: NavController, var context: Context) {
     private var mAuth: FirebaseAuth
 
 

@@ -29,7 +29,9 @@ import com.grace.build_with.screens.magazine.MagazineScreen
 import com.grace.build_with.screens.nyumba.Nyumba_Photos
 import com.grace.build_with.screens.plumbing_project.PlumbingProjectScreen
 import com.grace.build_with.screens.pools.Pool_Photos
+import com.grace.build_with.screens.professionals.AddProfessionalUserScreen
 import com.grace.build_with.screens.professionals.ProfessionalsScreen
+//import com.grace.build_with.screens.professionals.UpdateProfessionalUserScreen
 import com.grace.build_with.screens.profile.ProfileScreen
 import com.grace.build_with.screens.projects.ProjectsScreen
 import com.grace.build_with.screens.renovation_project.RenovationProjectScreen
@@ -56,9 +58,9 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
         composable(route=BottomBarScreen.Professionals.route){
             ProfessionalsScreen(navController)
         }
-        composable(route=BottomBarScreen.Bookmarks.route){
-            BookmarkScreen(navController)
-        }
+//        composable(route=BottomBarScreen.Bookmarks.route){
+//            BookmarkScreen(navController)
+//        }
 
 //        SCREENS WITH NO BOTTOMBAR
         composable(ROUTE_LOGIN){
@@ -86,6 +88,12 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
         composable(ROUTE_CONTACT_INFORMATION){
            ContactInformationScreen(navController)
         }
+        composable(ROUTE_REGISTERPROFESSIONAL) {
+            AddProfessionalUserScreen(navController)
+        }
+//        composable(ROUTE_UPDATEPROFESSIONALS+"/{id}"){passedData->
+//            UpdateProfessionalUserScreen(navController,passedData.arguments?.getString("id")!!)
+//        }
 //        composable(ROUTE_PUBLISH){
 //           PublishScreen(navController)
 //        }

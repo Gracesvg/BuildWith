@@ -1,15 +1,10 @@
 package com.grace.build_with
 
 import android.annotation.SuppressLint
-import android.util.Log
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.fadeOut
-import androidx.compose.animation.slideInHorizontally
-import androidx.compose.animation.slideOutVertically
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -19,11 +14,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.ContentAlpha
@@ -82,6 +76,12 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import coil.compose.rememberAsyncImagePainter
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.core.Context
 import com.grace.build_with.navigation.BottomBarScreen
 import com.grace.build_with.navigation.AppNavHost
 import com.grace.build_with.navigation.ROUTE_PROFILE
@@ -92,7 +92,7 @@ import kotlinx.coroutines.launch
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NavigateScreen(){
-    
+
     val  navController= rememberNavController()
 
 
@@ -157,13 +157,16 @@ fun NavigateScreen(){
 
         AppNavHost(navController = navController)
     }
+
 }
+
+
 @Composable
 fun BottomBar(navController: NavHostController){
     val screens = listOf(
         BottomBarScreen.Home,
         BottomBarScreen.Professionals,
-        BottomBarScreen.Bookmarks,
+//        BottomBarScreen.Bookmarks,
         BottomBarScreen.Magazine
     )
     val navBackStackEntry by navController.currentBackStackEntryAsState()
